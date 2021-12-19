@@ -48,3 +48,14 @@ menu.addEventListener("click",()=>{
      searchBar.classList.remove('active');
      loginForm.classList.remove("active")
 })
+
+
+const videoBtn=document.querySelectorAll(".home__vid-btn");
+videoBtn.forEach(btn=>{
+    btn.addEventListener("click",()=>{
+        document.querySelector('.home__controls .home__vid-btn_active').classList.remove("home__vid-btn_active");
+        btn.classList.add("home__vid-btn_active");
+        let src=btn.getAttribute("data-src");
+        document.querySelector(".home__video_play").src=src
+    })
+})
