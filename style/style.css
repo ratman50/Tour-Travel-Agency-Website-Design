@@ -28,6 +28,10 @@ html
     scroll-padding-top: 6rem;
 }
 
+section
+{
+    padding: 2rem 9%;
+}
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -225,6 +229,68 @@ header .search-bar-container:hover{
 }
 
 
+.home
+{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+.home__content
+{
+    text-align: center;
+}
+.home__title
+{
+    font-size: 4.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .1);
+}
+.home__text
+{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: .5rem 0;
+}
+
+.home__video_play
+{
+    position: absolute;
+    top: 0;left: 0;
+    z-index:-1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.home__controls
+{
+    padding: 1rem;
+    border-radius: 5rem;
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 10rem;
+}
+.home__vid-btn
+{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0 .5rem;
+}
+.home__vid-btn_active
+{
+   background-color: var(--orange); 
+}
+
+
+
 
 /* media queries */
 @media(max-width:1200px){
@@ -237,6 +303,9 @@ header .search-bar-container:hover{
 {
     header
     {
+        padding: 2rem;
+    }
+    section{
         padding: 2rem;
     }
 }
