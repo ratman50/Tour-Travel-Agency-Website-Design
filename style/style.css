@@ -356,6 +356,7 @@ header .search-bar-container:hover{
 }
 .box
 {
+    position: relative;
     flex: 1 1 30rem;
     border-radius: .5rem;
     overflow: hidden;
@@ -416,6 +417,29 @@ header .search-bar-container:hover{
 .box-container__box:hover
 {
     box-shadow: 0 0 0;
+}
+.content{
+    position: absolute;
+    left: 0;top: -125%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 5rem;
+    background-color: rgba(0, 0, 0, .7);
+}
+.content__title
+{
+    color: var(--orange);
+}
+.content__text  
+{
+    padding: 1.5rem  ;
+    color: #eee;
+}
+.galler__box:hover .content
+{
+    top: 0;
 }
 /* media queries */
 @media(max-width:1200px){
